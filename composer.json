@@ -1,0 +1,24 @@
+{
+    "name": "archlinux-de/flarum-redirect-ll",
+    "description": "Redirect legacy LL URLs to Flarum",
+    "license": "GPL-3.0-or-later",
+    "type": "flarum-extension",
+    "require": {
+        "flarum/core": ">=0.1.0-beta.16 <=0.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArchLinux\\RedirectLL\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "LL Redirect",
+            "icon": {
+                "name": "fas fa-directions",
+                "backgroundColor": "#08c",
+                "color": "#fff"
+            }
+        }
+    }
+}
