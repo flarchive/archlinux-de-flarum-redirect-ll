@@ -1,0 +1,36 @@
+{
+    "name": "archlinux-de/flarum-redirect-ll",
+    "description": "Redirect legacy LL URLs to Flarum",
+    "license": "GPL-3.0-or-later",
+    "type": "flarum-extension",
+    "require": {
+        "PHP": "^8.0",
+        "flarum/core": "^1.0.0",
+        "flarum/tags": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArchLinux\\RedirectLL\\": "src/",
+            "ArchLinux\\RedirectLL\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "LL Redirect",
+            "icon": {
+                "name": "fas fa-directions",
+                "backgroundColor": "#08c",
+                "color": "#fff"
+            }
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "^3.6",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^0.12.85",
+        "phpstan/phpstan-deprecation-rules": "^0.12.6",
+        "phpstan/phpstan-phpunit": "^0.12.18"
+    },
+    "minimum-stability": "beta"
+}
